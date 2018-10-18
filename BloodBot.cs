@@ -13,7 +13,7 @@ namespace BloodBot
         MatchParser matchparser = new MatchParser();
         SQL sql = new SQL();
         BetResolver betresolver = new BetResolver();
-        FumbblScrapper fumbblscrapper = new FumbblScrapper();
+        FumbblScraper fumbblscrapper = new FumbblScraper();
 
         // TODO make these lists
         public Dictionary<string, Match> LiveMatches = new Dictionary<string, Match>();

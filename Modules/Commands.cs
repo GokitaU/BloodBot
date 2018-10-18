@@ -9,7 +9,7 @@ namespace BloodBot
     public class Info : ModuleBase
     {
         SQL sql = new SQL();
-        FumbblScrapper fs = new FumbblScrapper();
+        FumbblScraper fs = new FumbblScraper();
 
         // TODO it should be somewhere else along with all other league information?
         const int LEAGUE_MAIN = 9828;
@@ -310,7 +310,7 @@ namespace BloodBot
         [Command("scheduled"), Summary("get scheduled matches")]
         public async Task Scheduled()
         {
-            FumbblScrapper fs = new FumbblScrapper();
+            FumbblScraper fs = new FumbblScraper();
             List<UpcomingGame> games = new List<UpcomingGame>();
             // TODO get scheduled games for all /tg/ groups
             games.AddRange(fs.GetUpcomingMatches(LEAGUE_MAIN));
@@ -339,7 +339,7 @@ namespace BloodBot
         [Command("today"), Summary("get scheduled games for today")]
         public async Task Today()
         {
-            FumbblScrapper fs = new FumbblScrapper();
+            FumbblScraper fs = new FumbblScraper();
             // TODO get scheduled games for all /tg/ groups
             List<UpcomingGame> games = fs.GetUpcomingMatches(LEAGUE_MAIN);
             if (games.Count == 0)

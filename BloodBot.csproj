@@ -170,7 +170,7 @@
     <Compile Include="BloodBot.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="DiscordConstants.cs" />
-    <Compile Include="FumbblScrapper.cs" />
+    <Compile Include="FumbblScraper.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="MatchParser.cs" />

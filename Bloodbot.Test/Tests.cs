@@ -38,7 +38,7 @@ namespace Bloodbot.Test
         [Test]
         public void When_ScrapperGetScore_Expect_Score()
         {
-            FumbblScrapper fs = new FumbblScrapper();
+            FumbblScraper fs = new FumbblScraper();
             string score = fs.GetScore("Ratattackattack!!!", "Underdog United");
             Assert.Warn(score);
         }
@@ -66,7 +66,7 @@ namespace Bloodbot.Test
         [Test]
         public void When_GetScore_Expect_Score()
         {
-            FumbblScrapper fs = new FumbblScrapper();
+            FumbblScraper fs = new FumbblScraper();
             string TeamA = "Quickslithers";
             string TeamB = "Teenage Mutant Ninja Hobos";
             string score;

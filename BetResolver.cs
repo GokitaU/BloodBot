@@ -10,7 +10,7 @@ namespace BloodBot
 {
     public class BetResolver
     {
-        FumbblScrapper scraper = new FumbblScrapper();
+        FumbblScraper scraper = new FumbblScraper();
         SQL sql = new SQL();
 
         public void ResolveMatch(Match match)
